@@ -1,0 +1,44 @@
+{
+  "name": "Template",
+  "version": "0.9.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "babel src -d lib & node ."
+  },
+  "bin": {
+    "addlic": "lib/index.js"
+  },
+  "preferGlobal": "true",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/audio35444/template-babel.git"
+  },
+  "keywords": [
+    "license",
+    "MIT",
+    "ISC",
+    "NTP"
+  ],
+  "author": "Juan Emmanuel Díaz <juaninsis@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/audio35444/template-babel/issues"
+  },
+  "homepage": "https://github.com/audio35444/template-babel#readme",
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.85.0",
+    "scriptparams": "^1.0.0",
+    "showtables": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "mocha": "^5.1.0"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "help":[
+    {"param":"-l","meaning":"license","example":"MIT"},
+    {"param":"-y","meaning":"year","example":"2018"},
+    {"param":"-a","meaning":"author","example":"Juan Emmanuel Díaz"},
+    {"param":"-dp","meaning":"destination path","example":"my-license/LICENSE"},
+    {"param":"-ni","meaning":"not internet","example":"----"},
+    {"param":"-f","meaning":"force, delete the current LICENSE","example":"----"},
+    {"param":"-o","meaning":"output file result","example":"----"}
+  ],
+  "default":{
+    "useInternet":true,
+    "notForce":true,
+    "fileName":"LICENSE",
+    "license":"MIT"
+  },
+  "licenses":{
+    "MIT":{
+      "url":"https://opensource.org/licenses/MIT",
+      "regexp":{
+        "y":"\\<YEAR\\>",
+        "a":"\\<COPYRIGHT\\sHOLDER\\>"
+      }
+    },
+    "ISC":{
+      "url":"https://opensource.org/licenses/ISC",
+      "regexp":{
+        "y":"\\<YEAR\\>",
+        "a":"\\<OWNER\\>"
+      }
+    },
+    "NTP":{
+      "url":"https://opensource.org/licenses/NTP",
+      "regexp":{
+        "y":"\\(From\\s4\\-digit\\-year\\)\\-\\(To\\s4\\-digit\\-year\\)",
+        "a":"\\(CopyrightHoldersName\\)|\\(TrademarkedName\\)"
+      }
+    }
+  }
+}
